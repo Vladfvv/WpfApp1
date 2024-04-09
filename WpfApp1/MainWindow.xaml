@@ -1,0 +1,52 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Calcuiator" Height="600" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>            
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>            
+        </Grid.ColumnDefinitions>        
+        <TextBlock x:Name="output" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Background="Cyan" Margin="5" FontSize="60"></TextBlock>
+        <Button x:Name="buttonGradusRadian"  Grid.Row="1" Grid.Column="0" Content="Gradus" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click1"></Button>
+        <Button x:Name="buttonDelete"  Grid.Row="1" Grid.Column="1" Content="del" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonRavno"  Grid.Row="1" Grid.Column="2" Content="=" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonMemory"  Grid.Row="1" Grid.Column="3" Content="m" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button_1_Div_x"  Grid.Row="1" Grid.Column="4" Content="1/x" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonSin"  Grid.Row="2" Grid.Column="0" Content="sin" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button7"  Grid.Row="2" Grid.Column="1" Content="7" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button8"  Grid.Row="2" Grid.Column="2" Content="8" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button9"  Grid.Row="2" Grid.Column="3" Content="9" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonDiv"  Grid.Row="2" Grid.Column="4" Content="/" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonCos"  Grid.Row="3" Grid.Column="0" Content="cos" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button4"  Grid.Row="3" Grid.Column="1" Content="4" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button5"  Grid.Row="3" Grid.Column="2" Content="5" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button6"  Grid.Row="3" Grid.Column="3" Content="6" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonMulti"  Grid.Row="3" Grid.Column="4" Content="*" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonTan"  Grid.Row="4" Grid.Column="0" Content="tan" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button1"  Grid.Row="4" Grid.Column="1" Content="1" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button2"  Grid.Row="4" Grid.Column="2" Content="2" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button3"  Grid.Row="4" Grid.Column="3" Content="3" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonMinus"  Grid.Row="4" Grid.Column="4" Content="-" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonCot"  Grid.Row="5" Grid.Column="0" Content="cot" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonStepen"  Grid.Row="5" Grid.Column="1" Content="x^n" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="button0"  Grid.Row="5" Grid.Column="2" Content="0" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonKoren"  Grid.Row="5" Grid.Column="3" Content="√" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>
+        <Button x:Name="buttonPlus"  Grid.Row="5" Grid.Column="4" Content="+" Margin="5" BorderThickness="1" RenderTransformOrigin="1,0" FontSize="30" Click="Button_Click"></Button>       
+    </Grid>
+</Window>
